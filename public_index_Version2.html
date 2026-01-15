@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>MC Watchdog — Bot Join</title>
+  <style>
+    body { font-family: Arial; max-width: 900px; margin: 20px; }
+    .server { border:1px solid #ddd; padding:8px; margin-bottom:8px; border-radius:6px; }
+    .online { color: green } .offline { color: red }
+    form { margin-bottom: 12px; }
+    input[type=text] { padding:6px; }
+  </style>
+</head>
+<body>
+  <h1>MC Watchdog — Bot Join</h1>
+
+  <form id="addForm">
+    <input id="name" placeholder="Name" required />
+    <input id="host" placeholder="IP or hostname (e.g. Itabbd.aternos.me)" required />
+    <input id="port" placeholder="Port (e.g. 48729)" required style="width:100px" />
+    <input id="botUsername" placeholder="Bot username (optional)" />
+    <label><input type="checkbox" id="save"> Save server (auto-join when online)</label>
+    <input id="hours" placeholder="Max hours (default 8)" type="number" min="1" style="width:120px" />
+    <button>Add server</button>
+  </form>
+
+  <div id="list"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

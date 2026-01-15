@@ -1,0 +1,8 @@
+# Redis
+REDIS_URL=redis://127.0.0.1:6379
+
+# API port
+PORT=3000
+
+# Default check interval (ms) when server is saved (default 60s)
+DEFAULT_CHECK_INTERVAL_MS=60000
